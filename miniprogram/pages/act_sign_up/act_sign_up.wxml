@@ -1,0 +1,25 @@
+<!--pages/act_sign_up/act_sign_up.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset" class="form">
+  <view class="title" value="act_name">「{{act_name}}」活动报名</view>
+  <view class="name">姓名
+    <input class="input" placeholder="请输入您的姓名" name="name" />[*必填]
+  </view>
+  <radio-group class="radio-group" bindchange="radioChange">性别
+    <label class="radio" wx:for="{{sex}}">
+      <radio value="{{item.name}}" />{{item.value}}
+      <!--checked="{{item.checked}}"-->
+    </label>[*必填]
+  </radio-group>
+  <view class="major">班级
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" name="banji" class="college">
+    <view class="picker" name="zz">
+      {{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}班
+    </view>
+  </picker>[*必填]
+</view>
+  <view class="phone">联系方式
+    <input type="number" maxlength="11" placeholder="请输入您的联系方式" class="input" name="phone" />[*必填]
+  </view>
+  <button form-type='submit' data-cc="{{multiArray[0][multiIndex[0]]}}" class="tj"><view class="tijiao">提交报名</view></button>
+  <!-- <button form-type="reset">Reset</button> -->
+</form>

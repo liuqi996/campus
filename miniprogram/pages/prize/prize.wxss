@@ -1,0 +1,21 @@
+/* pages/prize/prize.wxss */
+.introduction{
+  margin-top: 20px;
+  background: #e2e2e3;
+  border-radius: 10px;
+  width: 86%;
+  margin-left: 7%;
+  font-size: 12px;
+}
+.title{
+  padding-top: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+.detail{
+  padding-left:10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  line-height: 25px;
+}

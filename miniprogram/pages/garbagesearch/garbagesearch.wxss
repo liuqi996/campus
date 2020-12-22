@@ -1,0 +1,11 @@
+/* pages/search/search.wxss */
+@import "/colorui/main.wxss";
+@import "/colorui/icon.wxss";
+.kindicon{
+  width: 50rpx;
+  height: 50rpx;
+}
+page{
+  background-color: var(--ghostWhite);
+	font-size: 28rpx;
+}

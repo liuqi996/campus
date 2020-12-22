@@ -1,0 +1,9 @@
+<!--pages/prize/prize.wxml-->
+<view class="introduction">
+  <view class="title">近期无获奖公示</view>
+  <view class="detail">
+    <text class="det">
+      欢迎大家踊跃参与环协活动！
+    </text>
+  </view>
+</view>

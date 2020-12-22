@@ -1,0 +1,25 @@
+/* pages/qrcode_sign_in/qrcode_sign_in.wxss */
+.hd{
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.act_id{
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+.qd{
+  width:40% ;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 30%;
+  background: rgb(0, 160, 21);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}

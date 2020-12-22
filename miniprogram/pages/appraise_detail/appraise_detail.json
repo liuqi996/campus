@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "wux-cell-group": "../../wuxui/cell-group/index",
+    "wux-cell": "../../wuxui/cell/index",
+    "wux-rater": "../../wuxui/rater/index"
+  }
+}

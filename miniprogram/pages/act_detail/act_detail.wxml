@@ -1,0 +1,38 @@
+<!--pages/act_detail/act_detail.wxml-->
+<view wx:for="{{list}}">
+  <view class="bg-white">
+  <view class="title">{{item.activity_name}}</view>
+  <view class="act_id">[活动ID：{{item.act_id}}]</view>
+  <view class="act_date">
+    <image class="act_icon" src="../../images/detail/date.png"></image>
+    <text space="nbsp">活动时间：{{item.activity_date}} {{item.start_time}}</text>
+    <!-- -{{item.end_time}} -->
+  </view>
+  <view class="act_place">
+    <image class="act_icon" src="../../images/detail/didian.png"></image>
+    <text space="nbsp">活动地点：{{item.activity_place}}</text>
+  </view>
+  <view class="act_object">
+    <image class="act_icon" src="../../images/detail/object.png"></image>
+    <text space="nbsp">活动对象：{{item.activity_object}}</text>
+  </view>
+  <view class="act_sponsor">
+    <image class="act_icon" src="../../images/detail/zhuban.png"></image>
+    <text space="nbsp">主办：{{item.sponsor}}</text>
+  </view>
+  <view class="act_co-organizer">
+    <image class="act_icon" src="../../images/detail/xieban.png"></image>
+    <text space="nbsp">协办：{{item.co_organizer}}</text>
+  </view>
+</view>
+  <view class="act_detail">
+    <image class="act_icon" src="../../images/detail/date.png"></image>
+    <text space="nbsp">活动详情：\n{{item.activity_detail}}</text>
+  </view>
+  <view wx:if="{{item.activity_date >= kktime}}">
+  <view class="sign_up" bindtap="signup" data-activity_name="{{item.activity_name}}" data-act_id="{{item.act_id}}" data-acttime="{{item.activity_date}}">立即报名</view>
+  </view>
+  <view wx:else ><view class="outdate">活动已过期</view></view>
+</view>
+
+<!--<wux-timeago class="timeago" to="{{item.activity_date}}"/>-->

@@ -1,0 +1,17 @@
+<!--pages/appraise_detail/appraise_detail.wxml-->
+<!-- <wux-cell title="评价" hover-class="none"><!--default-value="{{ 3 }}" margin="{{ 15 }}"
+  <wux-rater slot="footer" star="☻" controlled value="{{ value }}"  bind:change="onChange" />
+</wux-cell> -->
+
+<form bindsubmit="formSubmit" bindreset="formReset" class="form">
+<wux-cell-group title="活动评价">
+  <wux-cell title="评价" hover-class="none">
+    <wux-rater slot="footer" controlled value="{{ value }}" star="☻" bind:change="onChange" />
+  </wux-cell>
+</wux-cell-group>
+<view class="ts">请留下你的建议…</view>
+<view class="name">
+    <textarea class="input" placeholder="请输入您对本次活动的意见或建议" name="pji" />
+  </view>
+  <button form-type='submit' data-cc="{{multiArray[0][multiIndex[0]]}}" class="tj"><view class="tijiao">提交评价</view></button>
+</form>

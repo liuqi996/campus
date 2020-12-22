@@ -1,0 +1,37 @@
+/* pages/garbage/garbage.wxss */
+@import "/colorui/main.wxss";
+@import "/colorui/icon.wxss";
+page{
+  background-color: var(--ghostWhite);
+	font-size: 28rpx;
+}
+.sfl{
+  display: flex;
+  justify-content: center;
+}
+.zsj{
+  margin-left: 20rpx;
+}
+.add_icon{
+  position: fixed;
+  width: 90px;
+  height: 20px;
+  top: 170px;
+  right: -10px;
+  background-color: rgba(252, 93, 81,0.5);
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 1px 0 2px #ebebeb;
+  z-index:100;
+}
+.ui{
+  margin-top:20px;
+}
+.tips{
+  margin-top: 10px;
+}

@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/act_bm_list/act_bm_list",
+    "pages/act_detail/act_detail",
+    "pages/act_sign_up/act_sign_up",
+    "pages/act_sign_up_result/act_sign_up_result",
+    "pages/act_sign_in_intro/act_sign_in_intro",
+    "pages/prize/prize",
+    "pages/epa-introduction/epa-introduction",
+    "pages/appraise/appraise",
+    "pages/appraise_detail/appraise_detail",
+    "pages/epa-project/epa-project",
+    "pages/epa-team/epa-team",
+    "pages/epa-login/epa-login",
+    "pages/epa-cantrol/epa-cantrol",
+    "pages/epa-admin-act-list/epa-admin-act-list",
+    "pages/epa-admin-sign-up-data/epa-admin-sign-up-data",
+    "pages/epa-admin-sign-in-data/epa-admin-sign-in-data",
+    "pages/epa-admin-initiate/epa-admin-initiate",
+    "pages/activity_sign_in/activity_sign_in",
+    "pages/garbage/garbage",
+    "pages/garbagekind/garbagekind",
+    "pages/garbagesearch/garbagesearch",
+    "pages/garbagedetail/garbagedetail",
+    "pages/act_sign_in_result/act_sign_in_result",
+    "pages/epa-register/epa-register",
+    "pages/epa-amend-password/epa-amend-password",
+    "pages/qrcode_sign_in/qrcode_sign_in"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "智慧环协（尝鲜版）",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/index.png",
+     "selectedIconPath": "images/index-s.png"
+    },
+    {
+      "pagePath": "pages/garbage/garbage",
+      "text": "垃圾分类",
+      "iconPath": "images/garbage.png",
+      "selectedIconPath": "images/garbage-s.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

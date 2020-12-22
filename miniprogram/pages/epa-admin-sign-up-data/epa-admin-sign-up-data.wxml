@@ -1,0 +1,30 @@
+<!--pages/epa-admin-sign-up-data/epa-admin-sign-up-data.wxml-->
+<view class="listitem">
+  <!-- <view class="actname">活动名称</view> -->
+  <view class="actname">序号</view>
+  <view class="class">班级</view>
+  <view class="name">姓名</view>
+  <view class="sex">性别</view>
+  <view class="phone">联系方式</view>
+  <view class="bmtime">报名时间</view>
+  <view class="bmid">报名号</view>
+</view>
+<scroll-view scroll-x="true">
+<view wx:for="{{list}}" class="datalist" wx:for-index="idx">
+  <view class="listitem">
+  <!-- <view class="actname">{{item.activity_name}}</view> -->
+  <view class="actname">{{idx+1}}</view>
+  <view class="class">{{item.bjclass}}</view>
+  <view class="name">{{item.name}}</view>
+  <view class="sex">{{item.sex}}</view>
+  <view class="phone">{{item.phone}}</view>
+  <view class="bmtime">{{item.signuptime}}</view>
+  <view class="bmid">{{item.sign_up_id}}</view>
+</view>
+</view>
+<view class="more text-center center margin-top margin-bottom">
+  <view wx:if="{{list.length===0 || list.length<20}}"></view>
+  <view  wx:elif="{{fu===0}}"><view bindtap="more" class="bg-green text-white round margin-left margin-right">加载更多结果…</view></view>
+  <view wx:else class="bg-red text-white round margin-left margin-right">亲，没有更多搜索结果了哦！</view>
+</view>
+</scroll-view>

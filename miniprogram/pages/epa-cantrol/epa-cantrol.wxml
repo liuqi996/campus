@@ -1,0 +1,32 @@
+<!--pages/epa-cantrol/epa-cantrol.wxml-->
+<view class="menuitem">
+  <view class="intro">活动数据</view>
+  <view class="tro">
+    <view class="troitem" bindtap="admin_list">
+      <image class="troitemimg" src="../../images/icon/bm.png"></image>
+      <view class="menuname">报名数据</view>
+    </view>
+    <view class="troitem" bindtap="admin_list">
+      <image class="troitemimg" src="../../images/icon/qd.png"></image>
+      <view class="menuname">签到数据</view>
+    </view>
+    <view class="troitem" bindtap="admin_list">
+      <image class="troitemimg" src="../../images/icon/pj.png"></image>
+      <view class="menuname">评价数据</view>
+    </view>
+    <view class="troitem" bindtap="admin_list">
+      <image class="troitemimg" src="../../images/icon/hj.png"></image>
+      <view class="menuname">发起签到</view>
+    </view>
+  </view>
+</view>
+
+<view class="menuitem">
+  <view class="intro">修改密码</view>
+  <view class="tro">
+    <view class="troitem" bindtap="amend">
+      <image class="troitemimg" src="../../images/icon/bm.png"></image>
+      <view class="menuname">修改密码(开发中）</view>
+    </view>
+  </view>
+</view>

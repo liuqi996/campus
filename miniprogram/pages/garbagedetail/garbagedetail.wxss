@@ -1,0 +1,39 @@
+/* pages/garbagedetail/garbagedetail.wxss */
+@import "/colorui/animation.wxss";
+@import"/colorui/main.wxss";
+@import"/colorui/icon.wxss";
+page{
+  background-color: #fff;
+  background-color: var(--ghostWhite);
+  font-size: 28rpx;
+}
+image[class*="gif-"] {
+  border-radius: 6rpx;
+  display: block;
+}
+.english{
+  width: 46%;
+  height: 20px;
+  font-size: 15px;
+  margin-left: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kind{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.garbageicon{
+  width: 80px;
+  height: 80px;
+}
+.four{
+  display: flex;
+}
+.four image{
+  width: 25%;
+  height:312.6rpx;
+}

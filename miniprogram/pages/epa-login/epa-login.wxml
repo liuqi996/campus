@@ -1,0 +1,5 @@
+<!--pages/epa-login/epa-login.wxml-->
+<view class="srk">账号：<input focus="true" class='input' placeholder='请输入手机号'  bindinput='inputName' placeholder-class="placeholderStyle"></input></view>
+<view class="srk">密码：<input class='input1' password placeholder='请输入密码' bindinput='inputPassword' placeholder-class="placeholderStyle" bindconfirm="login"></input></view>
+<button class='button' type='primary' bindtap='login'>管理员登录</button>
+<button class='button' type='primary' bindtap='register'>注册管理员账号</button>

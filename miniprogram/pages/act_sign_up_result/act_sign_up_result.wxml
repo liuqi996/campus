@@ -1,0 +1,9 @@
+<!--pages/act_sign_up_result/act_sign_up_result.wxml-->
+<view class="ts">
+  <image class="success" src="../../images/success.png"></image>
+</view>
+<view class="cg">报名成功！</view>
+<view class="bmh">报名号：{{sign_up_id}}</view>
+<view class="act-name"><text>活动名称:\n</text>{{activity_name}}</view>
+<view class="id">活动ID：{{activity_id}}</view>
+<view class="back" bindtap="back">返回首页</view>

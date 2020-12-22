@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "wux-segmented-control": "../../wuxui/segmented-control/index",
+    "wux-timeago": "../../wuxui/timeago/index"
+  },
+  "navigationBarTitleText": "活动列表"
+}

@@ -1,0 +1,45 @@
+/* pages/act_sign_up_result/act_sign_up_result.wxss */
+.ts{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.success{
+  width: 40px;
+  height: 40px;
+}
+.cg{
+  margin-top: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+.bmh{
+  margin-top: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+.act-name{
+  margin-top: 40px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+.id{
+  margin-top: 10px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+.back{
+  width: 30%;
+  height: 40px;
+  background: rgb(9, 163, 99);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 35%;
+}

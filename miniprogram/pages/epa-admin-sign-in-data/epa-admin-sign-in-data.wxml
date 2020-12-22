@@ -1,0 +1,31 @@
+<!--pages/epa-admin-sign-in-data/epa-admin-sign-in-data.wxml-->
+<view class="listitem">
+  <view class="actname">序号</view>
+  <view class="class">班级</view>
+  <view class="name">姓名</view>
+  <view class="sex">性别</view>
+  <view class="phone">联系方式</view>
+  <view class="bmtime">签到状态</view>
+  <view class="bmid">签到时间</view>
+</view>
+<scroll-view scroll-x="true">
+<view wx:for="{{list}}" class="datalist" wx:for-index="idx">
+  <view class="listitem">
+  <view class="actname">{{idx+1}}</view>
+  <view class="class">{{item.bjclass}}</view>
+  <view class="name">{{item.name}}</view>
+  <view class="sex">{{item.sex}}</view>
+  <view class="phone">{{item.phone}}</view>
+  <view class="bmtime">
+    <view wx:if="{{item.sign_in_state==1}}">已签到</view>
+    <view wx:else>未签到</view>
+  </view>
+  <view class="bmid">{{item.sign_in_time}}</view>
+</view>
+</view>
+<view class="more text-center center margin-top margin-bottom">
+  <view wx:if="{{list.length===0 || list.length<20}}"></view>
+  <view  wx:elif="{{fu===0}}"><view bindtap="more" class="bg-green text-white round margin-left margin-right">加载更多结果…</view></view>
+  <view wx:else class="bg-red text-white round margin-left margin-right">亲，没有更多搜索结果了哦！</view>
+</view>
+</scroll-view>

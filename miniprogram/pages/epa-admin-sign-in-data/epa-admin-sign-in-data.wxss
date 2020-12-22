@@ -1,0 +1,54 @@
+/* pages/epa-admin-sign-in-data/epa-admin-sign-in-data.wxss */
+.datalist{
+  font-size: 10px;
+}
+.listitem{
+  display: flex;
+  font-size: 10px;
+}
+.actname,.class,.name,.sex,.phone,.bmtime,.bmid{
+  word-break:break-all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.actname{
+  width: 100px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.class{
+  width: 100px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.name{
+  width: 40px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.sex{
+  width: 30px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.phone{
+  width: 100px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.bmtime{
+  width: 100px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.bmid{
+  width: 120px;
+  border: 1px solid black;
+}

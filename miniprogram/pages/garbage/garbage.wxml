@@ -1,0 +1,72 @@
+<!--pages/garbage/garbage.wxml-->
+<view class="cu-bar bg-white search">
+  <view class="search-form round">
+    <text class="cuIcon-search"></text>
+    <input type="text" placeholder="请输入垃圾的名称或种类" confirm-type="search" bindinput="bindchange" bindconfirm="search"></input>
+  </view>
+  <view class="action">
+    <view class="cu-btn bg-gradual-green shadow-blur round" bindtap="search">搜索</view>
+  </view>
+</view>
+
+<view class="grid col-2 padding-sm">
+  <view class="padding-sm" data-kind="厨余垃圾" bindtap="kindsearch">
+    <view class="bg-gradual-green padding radius text-center shadow-blur">
+      <view class="text-lg text-bold">厨余垃圾</view>
+      <view class="margin-top-sm text-Abc">垃圾收集设施一般为绿色</view>
+    </view>
+  </view>
+  <view class="padding-sm" data-kind="可回收物" bindtap="kindsearch">
+    <view class="bg-gradual-blue padding radius text-center shadow-blur">
+      <view class="text-lg text-bold">可回收物</view>
+      <view class="margin-top-sm text-Abc">垃圾收集设施一般为蓝色</view>
+    </view>
+  </view>
+  <view class="padding-sm" data-kind="有害垃圾" bindtap="kindsearch">
+    <view class="bg-gradual-red padding radius text-center shadow-blur">
+      <view class="text-lg text-bold">有害垃圾</view>
+      <view class="margin-top-sm text-Abc">垃圾收集设施一般为红色</view>
+    </view>
+  </view>
+  <view class="padding-sm" data-kind="其他垃圾" bindtap="kindsearch">
+    <view class="bg-black padding radius text-center shadow-blur">
+      <view class="text-lg text-bold">其他垃圾</view>
+      <view class="margin-top-sm text-Abc">垃圾收集设施一般为灰色、泥色、黑色</view>
+    </view>
+  </view>
+</view>
+<view class="cu-bar bg-white margin-top" data-kind="厨余垃圾" bindtap="detail">
+  <view class="action text-green">
+    <text class="cuIcon-title text-green"></text>厨余垃圾（Food Waste）
+  </view>
+</view>
+<view class="bg-white" data-kind="厨余垃圾" bindtap="detail">
+  <view class="margin-left margin-right margin-bottom">菜帮菜叶、瓜果皮壳、鱼骨鱼刺、剩菜剩饭、茶叶渣、残枝落叶、调料、过期食品等。</view>
+</view>
+<view class="cu-bar bg-white margin-top" data-kind="可回收物" bindtap="detail">
+  <view class="action text-blue">
+    <text class="cuIcon-title text-blue"></text>可回收物（Recyclable）
+  </view>
+</view>
+<view class="bg-white" data-kind="可回收物" bindtap="detail">
+  <view class="margin-left margin-right margin-bottom">废玻璃、废金属、废塑料、废旧织物、废纸张、废书籍、废纸板箱、废弃电器电子产品等。</view>
+</view>
+<official-account class="margin-top"></official-account>
+<view class="cu-bar bg-white margin-top" data-kind="有害垃圾" bindtap="detail">
+  <view class="action text-red">
+    <text class="cuIcon-title text-red"></text>有害垃圾（Hazardous Waste）
+  </view>
+</view>
+<view class="bg-white" data-kind="有害垃圾" bindtap="detail">
+  <view class="margin-left margin-right margin-bottom">充电电池温度计、血压计、消毒液、废含汞荧光灯管、杀虫剂及其包装物、过期药品及其包装物、废油漆和溶剂及其包装物等。</view>
+</view>
+<view class="cu-bar bg-white margin-top" data-kind="其他垃圾" bindtap="detail">
+  <view class="action text-grey">
+    <text class="cuIcon-title text-grey"></text>其他垃圾（Residual Waste）
+  </view>
+</view>
+<view class="bg-white" data-kind="其他垃圾" bindtap="detail">
+<view class="margin-left margin-right margin-bottom">卫生纸、饮料杯、塑料袋、纸尿裤、污染纸张、餐盒、大棒骨、陶瓷碎片等。</view>
+</view>
+
+<view class="margin-left margin-right text-red tips">温馨提示：本小程序所列出的垃圾分类的信息仅供参考，请以权威信息为准。</view>

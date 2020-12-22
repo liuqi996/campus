@@ -1,0 +1,35 @@
+/* pages/epa-login/epa-login.wxss */
+.srk{
+  display: flex;
+  height: 30px;
+  align-items: center;
+  text-align: center;
+  margin-left: 6px;
+  margin-top: 5px;
+  justify-content: center;
+}
+.input{
+  width: 60%;
+  background-color: #e4e4e4;
+  font-size: 13px;
+  height: 30px;
+  border-radius: 30px;
+}
+.input1{
+  margin-left: 8px;
+  width: 60%;
+  background-color: #e4e4e4;
+  font-size: 13px;
+  height: 30px;
+  border-radius: 30px;
+}
+.placeholderStyle{
+  font-size: 13px;
+}
+.button{
+  margin-top:15px;
+}
+
+.button1{
+  margin-top:6px;
+}

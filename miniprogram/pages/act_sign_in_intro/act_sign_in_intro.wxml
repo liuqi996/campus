@@ -1,0 +1,39 @@
+<!--pages/act_sign_in_intro/act_sign_in_intro.wxml-->
+<view class="introduction">
+  <view class="title">签到说明</view>
+  <view class="detail">
+    <text class="det">
+      1.环协的活动签到方式主要有验证码签到、扫码签到、纸质表上签到。
+      2.推荐使用验证码签到和扫码签到，纸质表上签到只在小程序服务出现故障时供应急时使用。
+      3.验证码签到所采用的原理：管理员在本小程序上设置活动的六位数验证码或者由小程序随机生成，将六位数验证码输入签到的验证框内即可签到.。
+      4.扫码签到所采用的原理：管理员在相关页面生成一个小程序码，活动参与者打开微信的扫一扫即可跳转到签到页面。
+    </text>
+  </view>
+</view>
+<view class="menu">
+  <view class="menu-left" bindtap="powerDrawer" data-statu="open">
+    <!-- <image class="menuimg" src="../../images/yzmqd.png"></image> -->
+    验证码签到
+  </view>
+  <view class="menu-right">
+    <!-- <image class="menuimg" src="../../images/yzmqd.png"></image> -->
+    <!--<text style="font-size:10px">\n（功能开发中…）</text>-->
+    <view class="textright" bindtap="scanCode">扫码签到</view>
+  </view>
+</view>
+<view>{{message}},{{rawdata}}</view>
+<!--mask-->
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+<!--content-->
+<!--使用animation属性指定需要执行的动画-->
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+<!--width:100%;display:flex;justify-content: center;-->
+<view class="drawer_title">验证码签到</view>
+ <view class="drawer_content">
+  <view class="shurukuang">
+   <view class="yzmtitle">请输入活动签到码</view><!--name="yzmcode"-->
+   <input class="yzminput"  placeholder="6位验证码" placeholder-style="text-align:center;font-size:18px" value='{{yzmcode}}' bindconfirm="yzcode" bindinput="input" type="text"></input>
+  </view>
+ </view>
+ <view class="btn_ok" bindtap="yzcode" data-statu="close">确定</view>
+</view>

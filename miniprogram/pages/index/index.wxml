@@ -1,0 +1,84 @@
+<!--pages/index/index.wxml-->
+<view class="ad">绿水青山，<text>\n</text>就是金山银山。</view>
+<view class="menuitem">
+  <view class="dot1" bindtap="change"><view>●</view><view>✚</view></view>
+  <view class="intro">常用功能</view>
+  <view class="tro">
+    <view class="troitem" bindtap="sign_up">
+      <image class="troitemimg" src="../../images/icon/bm.png"></image>
+      <view class="menuname">活动报名</view>
+    </view>
+    <view class="troitem" bindtap="register">
+      <image class="troitemimg" src="../../images/icon/qd.png"></image>
+      <view class="menuname">活动签到</view>
+    </view>
+    <view class="troitem" bindtap="appraise">
+      <image class="troitemimg" src="../../images/icon/pj.png"></image>
+      <view class="menuname">活动评价</view>
+    </view>
+    <view class="troitem" bindtap="prize">
+      <image class="troitemimg" src="../../images/icon/hj.png"></image>
+      <view class="menuname">获奖公示</view>
+    </view>
+  </view>
+</view>
+<view class="menuitem-bottom {{showView?'show':'hide'}}">
+  <view class="tro-bottom">
+    <view class="troitemb1" bindtap="sign_up">
+      <view class="menuname">环保项目</view>
+      <view class="troitemimga">星</view>
+    </view>
+    <view class="troitemb1" bindtap="sign_up">
+      <view class="menuname">EPA团队</view>
+      <view class="troitemimgb">辰</view>
+    </view>
+    <view class="troitemb1" bindtap="sign_up">
+      <view class="menuname">发展历程</view>
+      <view class="troitemimgc">大</view>
+    </view>
+    <view class="troitemb1" bindtap="sign_up">
+      <view class="menuname">历史荣誉</view>
+      <view class="troitemimgd">海</view>
+    </view>
+  </view>
+  <view class="intro-bottom">环协故事</view>
+  <view class="dot2" bindtap="change"><view>●</view><view>●</view></view>
+</view>
+<view class="ad1 {{showView?'show':'hide'}}">你的眼睛里，<text>\n</text>我看到了星辰大海。</view>
+<view class="recent">环协活动</view>
+<scroll-view class="swp" scroll-x="true" bindscroll="scroll" bindtap="openhuanxie">
+
+  <view class="scv-recent">
+    <view class="scvcontext">
+      <view class="scrtitle">最新活动</view>
+      <text>Recent Activities</text>
+    </view>
+  </view>
+
+  <view class="scv-academiclecture">
+    <view class="scvcontext">
+      <view class="scrtitle">经典活动</view>
+      <text>Popular Activities</text>
+    </view>
+  </view>
+
+  <view class="scv-library">
+    <view class="scvcontext">
+      <view class="scrtitle">环保义教</view>
+     <text>Study in Library</text>
+    </view>
+  </view>
+
+  <view class="scv-activity">
+    <view class="scvcontext">
+      <view class="scrtitle-act">其他活动</view>
+      <view class="scrtitle-act"><view class="act-en">Socially Useful Activities</view></view>
+    </view>
+  </view>
+</scroll-view>
+
+<view class="ad2">水光山色与人亲，<text>\n</text>说不尽，无穷好。</view>
+<view class="start">历史活动</view>
+<view class="soon" bindtap="allactivity"></view>
+
+<view class="administrator" bindtap="adminlogin">管理员登录入口 ></view>

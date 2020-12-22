@@ -1,0 +1,256 @@
+/* pages/act_sign_up/act_sign_up.wxss */
+page{
+  background: rgb(235, 233, 233);
+}
+.form{
+  margin-top: 15px;
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+  border-top: 3px solid grey;
+  box-shadow: 0px 2px 6px 0px rgba(182, 175, 230, 100);
+}
+.title{
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.name{
+  height:46px;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+.input{
+  margin-left: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  display: flex;
+  background: rgb(244, 244, 244);
+  justify-content: center;
+  height: 11px;
+  line-height: 11px;
+}
+.radio-group{
+  margin-left: 10px;
+  margin-top:10px;
+  font-size: 12px;
+  border-bottom: 1px solid rgb(233, 233, 233);
+  height:46px;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+}
+.radio{
+  margin-left:10px;
+}
+/* .college{
+  display: flex;
+  margin-left: 10px;
+  font-size: 12px;
+  margin-top: 10px;
+} */
+.college{
+  margin-left: 10px ;
+}
+.major{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 12px;
+  align-items: center;
+
+  border-bottom: 1px solid rgb(233, 233, 233);
+  height:46px;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+}
+.phone{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 12px;
+  align-items: center;
+
+  border-bottom: 1px solid rgb(233, 233, 233);
+  height:46px;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+}
+.tj{
+  margin-top:30px;
+}
+.tijiao{
+  border-radius: 5%;
+  width:70%;
+  margin-left: 15%;
+  height: 36px;
+  background: linear-gradient(45deg, #0081ff, #1cbbb4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
+
+button {
+  background: initial;
+}
+
+button:focus{
+  outline: 0;
+}
+
+button::after{
+  border: none;
+}
+
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.userinfo, .uploader, .tunnel {
+  margin-top: 40rpx;
+  height: 140rpx;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+}
+
+.userinfo-avatar:after {
+  border: none;
+}
+
+.userinfo-nickname {
+  font-size: 32rpx;
+  color: #007aff;
+  background-color: white;
+  background-size: cover;
+}
+
+.userinfo-nickname::after {
+  border: none;
+}
+
+.uploader, .tunnel {
+  height: auto;
+  padding: 0 0 0 40rpx;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.uploader-text, .tunnel-text {
+  width: 100%;
+  line-height: 52px;
+  font-size: 34rpx;
+  color: #007aff;
+}
+
+.uploader-container {
+  width: 100%;
+  height: 400rpx;
+  padding: 20rpx 20rpx 20rpx 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.uploader-image {
+  width: 100%;
+  height: 360rpx;
+}
+
+.tunnel {
+  padding: 0 0 0 40rpx;
+}
+
+.tunnel-text {
+  position: relative;
+  color: #222;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tunnel-text:first-child {
+  border-top: none;
+}
+
+.tunnel-switch {
+  position: absolute;
+  right: 20rpx;
+  top: -2rpx;
+}
+
+.disable {
+  color: #888;
+}
+
+.service {
+  position: fixed;
+  right: 40rpx;
+  bottom: 40rpx;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  background: linear-gradient(#007aff, #0063ce);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  transition: all 300ms ease;
+}
+
+.service-button {
+  position: absolute;
+  top: 40rpx;
+}
+
+.service:active {
+  box-shadow: none;
+}
+
+.request-text {
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  word-break: break-all;
+}

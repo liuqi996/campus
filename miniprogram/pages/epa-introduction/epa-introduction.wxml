@@ -1,0 +1,12 @@
+<!--pages/epa-introduction/epa-introduction.wxml-->
+<wux-timeline position="alternate">
+  <wux-timeline-item content="2003年，由学生自发兴起、在化学与生物工程学院分团委领导下、在学生干部的帮助下成立的一支公益性社团。" />
+  <wux-timeline-item content="2015年，获评2014年度“校十佳社团”。" />
+  <wux-timeline-item content="2015-2016年度，获“校十佳社团”、“校五星级社团”等荣誉。" />
+  <wux-timeline-item content="2016年，获“湖南省十佳社团”称号。" />
+  <wux-timeline-item content="2016年，获“湖南省十佳社团”称号。" />
+  <wux-timeline-item content="2017年，获得“第二届青年志愿者服务项目”银奖。" />
+  <wux-timeline-item content="2017年，在湖南省“百优十佳”社团评比中获评湖南省“百优社团”。"/>
+  <wux-timeline-item content="2018年，获得2017年度“校十佳社团”。"/>
+  <wux-timeline-item content="2018年，获评2017年度“校五星级社团”。"/>
+</wux-timeline>

@@ -1,0 +1,78 @@
+/* pages/act_detail/act_detail.wxss */
+page{
+  background: rgb(219, 219, 219);
+}
+.bg-white{
+  background: white;
+}
+.title{
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-left: 8px;
+}
+.act_id{
+  font-size: 13px;
+  color: grey;
+  margin-left: 8px;
+}
+.act_icon{
+  width: 15px;
+  height: 15px;
+  padding-right: 8px;
+}
+.act_date , .act_place , .act_object , .act_sponsor{
+  margin-left: 8px;
+  font-size: 13px;
+  border-bottom: 1px solid grey;
+  margin-right: 8px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background: white;
+}
+.act_co-organizer{
+  margin-left: 8px;
+  font-size: 13px;
+  width: 90%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background: white;
+}
+.act_detail{
+  padding-top: 10px;
+  margin-top:20px;
+  background: white;
+  min-height: 400px;
+  font-size: 13px;
+  padding-left: 8px;
+  font-size: 13px;
+  display: flex;
+  background: white;
+}
+.sign_up{
+  width: 100%;
+  height: 110rpx;
+  font-weight: 800;
+  letter-spacing: 5px;
+  background: rgb(0, 172, 0);
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+}
+.outdate{
+  width: 100%;
+  height: 110rpx;
+  font-weight: 800;
+  letter-spacing: 5px;
+  background: rgb(202, 202, 202);
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+}

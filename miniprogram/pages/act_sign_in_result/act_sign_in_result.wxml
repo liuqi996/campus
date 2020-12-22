@@ -1,0 +1,11 @@
+<!--pages/act_sign_in_result/act_sign_in_result.wxml-->
+<view class="ts">
+  <image class="success" src="../../images/success.png"></image>
+</view>
+<view class="cg">签到成功！</view>
+<view class="bmh">签到时间：{{qdsj}}</view>
+<view class="bmh">班级：{{bjclass}}</view>
+<view class="bmh">姓名：{{name}}</view>
+<view class="act-name"><text>活动名称:</text>{{activity_name}}</view>
+<view class="id">活动ID：{{activity_id}}</view>
+<view class="back" bindtap="back">返回首页</view>

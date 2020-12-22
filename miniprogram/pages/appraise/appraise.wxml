@@ -1,0 +1,47 @@
+<!--pages/appraise/appraise.wxml-->
+<scroll-view scroll-x class="bg-white nav">
+  <view class="flex text-center">
+    <view class="grade cu-item flex-sub {{index==TabCur?'text-blue cur':''}}" wx:for="{{grade}}"  bindtap="tabSelect" data-id="{{index}}" data-TabCur="{{index}}">
+      {{item.name}}
+    </view>
+  </view>
+</scroll-view>
+
+<swiper class="swiper" duration="200" bindchange="swiperChange" current="{{TabCur}}">
+  <swiper-item>
+    <scroll-view scroll-y="true" style="height: 85vh;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+   <view wx:for="{{list1}}" class="swpi">
+     <view>活动名称：{{item.activity_name}}</view>
+     <view>活动时间：{{item.activity_date}}</view>
+     <view>活动ID：{{item.activity_id}}</view>
+     <view>报名时间：{{item.signuptime}}</view>
+     <view>报名号：{{item.sign_up_id}}</view>
+   </view>
+  </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y="true" style="height: 85vh;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+   <view wx:for="{{list2}}" class="swpi">
+     <view>活动名称：{{item.activity_name}}</view>
+     <view>活动时间：{{item.activity_date}}</view>
+     <view>活动ID：{{item.act_id}}</view>
+     <view>报名时间：{{item.signuptime}}</view>
+     <view>报名号：{{item.sign_up_id}}</view></view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y="true" style="height: 85vh;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view wx:for="{{list3}}" class="swpi">
+     <view>活动名称：{{item.activity_name}}</view>
+     <view>活动时间：{{item.activity_date}}</view>
+     <view>活动ID：{{item.act_id}}</view>
+     <view>报名时间：{{item.signuptime}}</view>
+     <view>报名号：{{item.sign_up_id}}</view>
+     <view class="pj" bindtap="pj" data-name="{{item.activity_name}}" data-id="{{item._id}}">去评价</view>
+    </view>
+  </scroll-view>
+  </swiper-item>
+  <!-- <swiper-item>
+   <view>你好，毕业生！</view>
+  </swiper-item> -->
+ </swiper>

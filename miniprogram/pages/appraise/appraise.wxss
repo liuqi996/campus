@@ -1,0 +1,58 @@
+/* pages/appraise/appraise.wxss */
+@import"../../colorui/main.wxss";
+page{
+  background: #e2e2e3;
+}
+.top{
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'top';
+  margin-left: 20rpx;
+}
+.grade{
+  font-size: 12px;
+}
+.discover-swp{
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  /*margin-left: 5%;
+  margin-right: 5%;*/
+  margin-bottom: 10rpx;
+  height: 1000rpx;
+}
+.discover-swp .wx-swiper-dot {
+  margin-top: 20px;
+  width: 15rpx;
+  height: 6rpx;
+  background: white;
+  border-radius: 15rpx;
+}
+.discover-swp .wx-swiper-dot.wx-swiper-dot-active {
+  width: 30rpx;
+  height: 6rpx;
+  background: #8b1039;
+  border-radius: 15rpx;
+}
+.swiper{
+  margin-top: 20px;
+  height: 90vh;
+  /* height:1000rpx; */
+}
+.swpi{
+  width: 90%;
+  margin-left: 5%;
+  background: rgb(255, 255, 255);
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.pj{
+  width: 50px;
+  height: 25px;
+  background: rgb(0, 119, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

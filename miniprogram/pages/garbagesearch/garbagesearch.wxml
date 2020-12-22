@@ -1,0 +1,39 @@
+<!--pages/search/search.wxml-->
+<view class='cu-load load-modal' wx:if="{{loadModal}}">
+  <image src='/images/search.png' class='png' mode='aspectFit'></image>
+  <view class='gray-text'>搜索中...</view>
+</view>
+<view class="cu-bar bg-white search fixed">
+  <view class="search-form round">
+    <text class="cuIcon-search"></text>
+    <input type="text" placeholder="请输入垃圾的名称或种类" value='{{searchvalue}}' bindconfirm="search" bindinput="input" type="text"></input>
+  </view>
+  <view class="action">
+    <view class="cu-btn bg-gradual-green shadow-blur round" bindtap="search">搜索</view>
+  </view>
+</view>
+<view class="margin-top" scroll-y="true" style="margin-top:50px"> 
+  <view wx:for="{{lists}}" wx:for-item='i' wx:key="lists" class="margin-top" data-name="{{i.name}}" data-kind="{{i.kind}}" data-property="{{i.property}}" bindtap="detail">
+    <view wx:if="{{i.kindnum==1}}" selectable="true" class="margin-top margin-left margin-right bg-blue light shadow-blur grid col-2">
+      <view class="padding-sm text-bold text-black"><text selectable="true" >{{i.name}}</text></view>
+      <view class="padding-sm">建议投放：<text class="text-white bg-blue padding-xs">{{i.kind}}</text></view>
+    </view>
+    <view wx:elif="{{i.kindnum==2}}" selectable="true" class="margin-top margin-left margin-right bg-green shadow-blur light grid col-2">
+      <view class="padding-sm text-bold text-black"><text selectable="true" >{{i.name}}</text></view>
+      <view class="padding-sm">建议投放：<text class="text-white bg-green padding-xs">{{i.kind}}</text></view>
+    </view>
+    <view wx:elif="{{i.kindnum==3}}" selectable="true" class="margin-top margin-left margin-right bg-red shadow-blur light grid col-2">
+      <view class="padding-sm text-bold text-black"><text selectable="true" >{{i.name}}</text></view>
+      <view class="padding-sm">建议投放：<text class="text-white bg-red padding-xs">{{i.kind}}</text></view>
+    </view>
+    <view wx:else="{{i.kindnum==4}}" selectable="true" class="margin-top margin-left margin-right shadow-blur bg-grey light grid col-2">
+      <view class="padding-sm text-bold text-black"><text selectable="true">{{i.name}}</text></view>
+      <view class="padding-sm">建议投放：<text class="text-white bg-grey padding-xs">{{i.kind}}</text></view>
+    </view>
+  </view>   
+</view>
+<view class="more text-center center margin-top margin-bottom">
+  <view wx:if="{{lists.length===0 || lists.length<20}}"></view>
+  <view  wx:elif="{{fu===0}}"><view bindtap="more" class="bg-green text-white round margin-left margin-right">加载更多结果…</view></view>
+  <view wx:else class="bg-red text-white round margin-left margin-right">亲，没有更多搜索结果了哦！</view>
+</view>
