@@ -1,0 +1,16 @@
+<!--pages/epa-register/epa-register.wxml-->
+<view class="srk">姓名：<input class='input' placeholder='请输入你的真实姓名' bindinput='inputName' placeholder-class="placeholderStyle"></input></view>
+<view class="srk">密码：<input class='input1' placeholder='请输入登录密码' bindinput='inputPassword' type="password" placeholder-class="placeholderStyle"></input></view>
+<view class="srk">手机：<input class='input1' placeholder='请输入常用手机号' bindinput='inputPhone' placeholder-class="placeholderStyle"></input></view>
+<view class="srk">班级：<input class='input1' placeholder='例如：汉文2001' bindinput='inputBjclass' placeholder-class="placeholderStyle"></input></view>
+<button class='button' type='primary' bindtap='register'>提交注册审核</button>
+
+<view class="shuoming">
+  <view class="detail"><text>说明
+    1.请认真填写以上信息，不可以填写虚假信息，否则审核不通过注册。
+    2.手机号将会是你的登录账号，故请使用常用手机号，避免忘记。
+    3.注册完成并通过审核后，即可在登录界面登录账号，登录成功后，可以修改登录密码。
+    4.各位会员请勿尝试注册管理员账号，我们不予审核通过，本账号仅供查询后台数据使用，个人信息无价，故我们不会授权给非环协部长和干事查看，请予以谅解，这也是为了信息安全。
+  </text>
+</view>
+</view>

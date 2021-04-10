@@ -69,7 +69,7 @@ sliderChange(e) {
           appraise_star:this.data.star
         },success: res => {
           wx.showToast({
-            title: '签到成功！',
+            title: '评价成功！',
           });
         }
       })

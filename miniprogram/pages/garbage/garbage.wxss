@@ -35,3 +35,9 @@ page{
 .tips{
   margin-top: 10px;
 }
+
+.animate-number{text-align: center;}
+.num{margin: 20rpx;font-size: 48rpx}
+.num.num1{color: #576b95}
+.num.num2{color: #09bb07}
+.num.num3{color: #e64340}

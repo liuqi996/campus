@@ -1,0 +1,45 @@
+/* packageB//pages/epa_year/epa_year.wxss */
+/* page {
+	width: 100%;
+	height: 100%;
+}
+ 
+.left {
+	width: 300rpx;
+  height: 300rpx;
+  margin-left: 225rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+ 
+.white {
+	width: 136rpx;
+	height: 136rpx;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 10;
+	background-color: #fff;
+	transform: translate(-50%, -50%);
+} */
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 

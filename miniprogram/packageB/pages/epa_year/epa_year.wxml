@@ -1,0 +1,9 @@
+<!--packageB//pages/epa_year/epa_year.wxml-->
+<!-- <text>packageB//pages/epa_year/epa_year.wxml</text> -->
+<!-- <view class="left">
+	<cover-view class="white"></cover-view>
+	<canvas style="width: 136px; height: 136px;" canvas-id="Canvas"></canvas>
+</view> -->
+<view class="container">
+  <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
+</view>

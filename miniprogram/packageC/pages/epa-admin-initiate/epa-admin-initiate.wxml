@@ -1,0 +1,23 @@
+<!--pages/epa-admin-initiate/epa-admin-initiate.wxml-->
+<!-- <view class="detail">
+  <view class="title">说明</view>
+  <view class="txt">
+    <text>1.我是一个很强大的功能，是用来生成好看的好用的小程序码（很多人喜欢叫我“菊花码”）.
+    2.在很多大城市，我被用来乘车扫码登记，如在地铁车厢内粘贴我，让乘客扫码，便于出现疫情时通知同行的人.
+    3.但是使用我是需要付出代价的，因为没使用一次我都需要以Gbs消耗云函数资源，所以我很珍贵.
+    </text>
+  </view>
+</view> -->
+
+<view class="detail1">
+  <view class="title1">必读</view>
+  <view class="txt1">
+    <text>1.每次活动建议只生成一个签到码（协会内部任意一人触发该码后，可以分享到工作群内，提醒其他人不要再触发该按钮）
+      2.生成签到后在展示页面，请长按保存到手机相册。
+      3.可以将签到码放到PPT上，待活动开始时，让会员签到；也可以打印出来，粘贴在活动现场使用。
+    </text>
+  </view>
+</view>
+
+<view class="create" bindtap="onGetQrcode">生成活动签到码</view>
+

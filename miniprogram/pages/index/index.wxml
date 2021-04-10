@@ -24,19 +24,19 @@
 </view>
 <view class="menuitem-bottom {{showView?'show':'hide'}}">
   <view class="tro-bottom">
-    <view class="troitemb1" bindtap="sign_up">
+    <view class="troitemb1" bindtap="epa_project">
       <view class="menuname">环保项目</view>
       <view class="troitemimga">星</view>
     </view>
-    <view class="troitemb1" bindtap="sign_up">
+    <view class="troitemb1" bindtap="epa_team">
       <view class="menuname">EPA团队</view>
       <view class="troitemimgb">辰</view>
     </view>
-    <view class="troitemb1" bindtap="sign_up">
+    <view class="troitemb1" bindtap="history_honor">
       <view class="menuname">发展历程</view>
       <view class="troitemimgc">大</view>
     </view>
-    <view class="troitemb1" bindtap="sign_up">
+    <view class="troitemb1" bindtap="history_honor">
       <view class="menuname">历史荣誉</view>
       <view class="troitemimgd">海</view>
     </view>
@@ -44,9 +44,35 @@
   <view class="intro-bottom">环协故事</view>
   <view class="dot2" bindtap="change"><view>●</view><view>●</view></view>
 </view>
-<view class="ad1 {{showView?'show':'hide'}}">你的眼睛里，<text>\n</text>我看到了星辰大海。</view>
-<view class="recent">环协活动</view>
-<scroll-view class="swp" scroll-x="true" bindscroll="scroll" bindtap="openhuanxie">
+
+<swiper class="lbt" autoplay="true">
+  <block wx:for="{{index_swiper}}">
+    <swiper-item>
+      <navigator url="{{item.url}}" hover-class="none">
+        <image src="{{item.img}}" mode="widthFix" class="lbtimg"></image>
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<view class="ad1">你的眼睛里，<text>\n</text>我看到了星辰大海。</view>
+<!-- <view class="ad1 {{showView?'show':'hide'}}">你的眼睛里，<text>\n</text>我看到了星辰大海。</view> -->
+<view class="other">
+  <view class="left">
+    <button open-type="feedback" hover-class="none" show-message-card="true">建议反馈</button>
+  </view>
+  <view class="right">
+    <view class="right-top">
+      <button open-type="openSetting" hover-class="none" show-message-card="true">设置中心</button>
+    </view>
+    <view class="right-bottom">
+      <button open-type="contact" hover-class="none" show-message-card="true">联系环协</button>
+    </view>
+  </view>
+</view>
+<!-- <view class="recent">环协活动</view> -->
+<!-- <scroll-view class="swp" scroll-x="true" bindscroll="scroll" bindtap="openhuanxie">
 
   <view class="scv-recent">
     <view class="scvcontext">
@@ -75,10 +101,16 @@
       <view class="scrtitle-act"><view class="act-en">Socially Useful Activities</view></view>
     </view>
   </view>
-</scroll-view>
+</scroll-view> -->
 
 <view class="ad2">水光山色与人亲，<text>\n</text>说不尽，无穷好。</view>
 <view class="start">历史活动</view>
 <view class="soon" bindtap="allactivity"></view>
 
 <view class="administrator" bindtap="adminlogin">管理员登录入口 ></view>
+<view class="bottom">
+  <image class="epa" src="../../images/epa.png" mode="widthFix"></image>
+</view>
+
+
+<navigator url="../../packageC/pages/epa-cantrol/epa-cantrol">管理员页面</navigator>

@@ -1,5 +1,6 @@
 // pages/garbage/garbage.js
 const app = getApp();
+import NumberAnimate from "../../utils/NumberAnimate";
 Page({
 
   /**
@@ -32,7 +33,7 @@ Page({
   
   search:function(){
     wx.navigateTo({
-      url: '../garbagesearch/garbagesearch?searchvalue=' +this.data.searchvalue,
+      url: '../../packageD/pages/garbagesearch/garbagesearch?searchvalue=' +this.data.searchvalue,
     })
   },
 
@@ -40,7 +41,7 @@ Page({
     let searchvalue=e.currentTarget.dataset.kind;
     //console.log(searchvalue)
     wx.navigateTo({
-      url: '../garbagesearch/garbagesearch?searchvalue=' +searchvalue,
+      url: '../../packageD/pages/garbagesearch/garbagesearch?searchvalue=' +searchvalue,
     })
   },
 
@@ -48,7 +49,7 @@ Page({
     let kind=e.currentTarget.dataset.kind
     console.log(kind)
     wx.navigateTo({
-      url: "/pages/kinddetail/kinddetail?kind=" + kind
+      url: "../../packageD/pages/garbagekind/garbagekind?kind=" + kind
     })
   },
 
@@ -87,7 +88,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    this.animate()
   },
 
   /**
@@ -123,5 +124,70 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  animate:function(){
+
+    this.setData({
+      num1:'',
+      num2:'',
+      num3:'',
+      num1Complete:'',
+      num2Complete:'',
+      num3Complete:''
+    });
+ 
+    //  let num1 = 18362.856;
+    //  let n1 = new NumberAnimate({
+    //      from:num1,
+    //      speed:1000,
+    //      refreshTime:100,
+    //      decimals:3,
+    //      onUpdate:()=>{
+    //        this.setData({
+    //          num1:n1.tempValue
+    //        });
+    //      },
+    //      onComplete:()=>{
+    //          this.setData({
+    //            num1Complete:" 完成了"
+    //          });
+    //      }
+    //  });
+ 
+     let num2 = 3982;
+     let n2 = new NumberAnimate({
+         from:num2,
+         speed:1500,
+         decimals:0,
+         refreshTime:100,
+         onUpdate:()=>{
+           this.setData({
+             num2:n2.tempValue
+           });
+         },
+        //  onComplete:()=>{
+        //      this.setData({
+        //        num2Complete:" 完成了"
+        //      });
+        //  }
+     });
+ 
+    //  let num3 = 2123655255888.86;
+    //  let n3 = new NumberAnimate({
+    //      from:num3,
+    //      speed:2000,
+    //      refreshTime:100,
+    //      decimals:2,
+    //      onUpdate:()=>{
+    //        this.setData({
+    //          num3:n3.tempValue
+    //        });
+    //      },
+    //      onComplete:()=>{
+    //          this.setData({
+    //            num3Complete:" 完成了"
+    //          });
+    //      }
+    //  });
   }
 })

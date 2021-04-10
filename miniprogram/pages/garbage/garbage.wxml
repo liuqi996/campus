@@ -35,6 +35,13 @@
     </view>
   </view>
 </view>
+
+<view class="animate-number">共收录
+    <!-- <view class="num num1">{{num1}}{{num1Complete}}</view> -->
+    <view class="num num2">{{num2}}</view>种垃圾数据
+    <!-- <view class="num num3">{{num3}}{{num3Complete}}</view> -->
+</view>
+
 <view class="cu-bar bg-white margin-top" data-kind="厨余垃圾" bindtap="detail">
   <view class="action text-green">
     <text class="cuIcon-title text-green"></text>厨余垃圾（Food Waste）

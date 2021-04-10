@@ -2,6 +2,23 @@
 page{
   background-color: #fff;
 }
+button {
+  background: initial;
+  width: 100%;
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:focus{
+  outline: 0;
+}
+
+button::after{
+  border: none;
+}
+
 .dot{
   margin-top: 10px;
   display: flex;
@@ -38,7 +55,8 @@ page{
   font-weight: 700;
   font-size: 20px;
   margin-left:45rpx;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  margin-top: 50rpx;
   letter-spacing: 5px;
   color: #0099ff;
 }
@@ -388,4 +406,101 @@ page{
   letter-spacing: 2px;
   font-weight: 800;
   background: linear-gradient(to bottom, #2ab631d3,#ffffff );
+}
+/* .other{
+    margin-left:45rpx;
+    margin-top: 30rpx;
+    width: 660rpx;
+    height: 280rpx;
+    background: linear-gradient(#39b54a, #ffffff);
+    border-radius: 30rpx;
+    display: flex;
+}
+.left{
+  width: 330rpx;
+  background: gold;
+}
+.right{
+  width: 330rpx;
+}
+.right-top{
+  width: 330rpx;
+  height: 140rpx;
+  background: greenyellow;
+}
+.right-bottom{
+  width: 330rpx;
+  height: 140rpx;
+  background: rgb(213, 243, 167);
+} */
+.other{
+  margin-left:45rpx;
+  margin-top: 30rpx;
+  width: 660rpx;
+  height: 280rpx;
+  /* background: linear-gradient(#39b54a, #ffffff);
+  border-radius: 30rpx; */
+  display: flex;
+}
+.left{
+width: 310rpx;
+/* background: #149efa; */
+background:  linear-gradient(to right, #11998e, #38ef7d);
+border-radius: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: 3px;
+}
+.right{
+width: 310rpx;
+margin-left: 40rpx;
+}
+.right-top{
+width: 300rpx;
+height: 130rpx;
+/* background: rgb(28, 252, 47); */
+/* background: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080); */
+background: linear-gradient(to right, #ff8c00, #ff0080);
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: 3px;
+}
+.right-bottom{
+margin-top: 20rpx;
+width: 300rpx;
+height: 130rpx;
+/* background: rgb(169, 247, 202); */
+background: linear-gradient(to right, #da4453, #89216b);
+border-radius: 10px;
+font-size: 17px;
+letter-spacing: 3px;
+font-weight: 600;
+display: flex;
+justify-content: center;
+align-items: center;
+/* color: #89216B; */
+color: white;
+}
+
+/* .epa{
+  width: 100%;
+} */
+.epa{
+  width: 750rpx;
+  height: 280rpx;
+}
+
+.lbt{
+  width: 660rpx;
+  height: 288rpx;
+  margin-left:45rpx;
+  border-radius: 10px;
+  margin-top: 50rpx;
+}
+.lbtimg{
+  width: 100%;
+  border-radius: 10px;
 }

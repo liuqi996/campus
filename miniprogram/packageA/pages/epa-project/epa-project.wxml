@@ -1,0 +1,30 @@
+<!--pages/epa-project/epa-project.wxml-->
+<view class="cu-card dynamic isCard">
+  <view class="cu-item shadow margin">
+    <view class="text-title padding-lr margin-top margin-right margin-left text-green text-bold">
+      <text class="cuIcon-title text-green"> </text>绿色潇湘护源行
+    </view>
+    <view class="text-content padding-left-lr padding-right-lr margin-top margin-left margin-right">
+        【我是河小青，美丽湖南行】项目,由湖南省河长制工作委员会办公室、湖南省人民检察院、湖南省水利厅、湖南省保护母亲河领导小组办公室、共青团湖南省委、湖南省委网信办主办。
+    </view>
+    <view class="grid flex-sub padding-lr isCard col-1 margin">
+      <view class="bg-img only-img" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);" wx:key="{{index}}">
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="cu-card dynamic isCard">
+  <view class="cu-item shadow margin">
+    <view class="text-title padding-lr margin-top margin-right margin-left text-green text-bold">
+      <text class="cuIcon-title text-green"> </text>携手护水，点滴筑家园
+    </view>
+    <view class="text-content padding-left-lr padding-right-lr margin-top margin-left margin-right">
+      志愿服务公益项目，荣获【湖南省第二届青年志愿服务项目“银奖”】
+    </view>
+    <view class="grid flex-sub padding-lr isCard col-1 margin">
+      <view class="bg-img only-img" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);" wx:key="{{index}}">
+      </view>
+    </view>
+  </view>
+</view>

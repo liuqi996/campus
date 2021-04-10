@@ -1,0 +1,36 @@
+/* packageB//pages/epa_recent/epa_recent.wxss */
+.detail{
+  width: 660rpx;
+  margin-left: 45rpx;
+  font-size: 12px;
+}
+.title{
+  margin-top: 40rpx;
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: rgb(0, 153, 241);
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  text-decoration-line: underline;
+}
+.dt{
+  margin-top: 10rpx;
+  line-height: 19px;
+  letter-spacing: 1.2px;
+  text-align: justify;
+  text-align-last: left;
+  /* text-align: justify;
+  /* text-align-last: left; */
+  /* text-align-last: none;
+  /* text-align-last: justify; */
+  /* width: 194rpx; */
+  /* text-align: justify;
+  text-align-last:justify;
+  text-justify:inter-ideograph; */
+}
+/* .dt::after{
+  width: 100%;
+  display: inline-block;
+  content: '';
+} */

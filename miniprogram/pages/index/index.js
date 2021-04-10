@@ -13,7 +13,7 @@ Page({
 
   adminlogin:function(){
     wx.navigateTo({
-      url: '/pages/epa-login/epa-login',
+      url: '../../packageC/pages/epa-login/epa-login',
     })
   },
 
@@ -23,6 +23,7 @@ Page({
     showView: (!that.data.showView)
   })
 },
+
   openhuanxie:function(){
     wx.navigateTo({
       url:"/pages/epa-introduction/epa-introduction"
@@ -32,6 +33,24 @@ Page({
   sign_up:function(){
     wx.navigateTo({
       url: '/pages/act_bm_list/act_bm_list',
+    })
+  },
+
+  epa_project:function(){
+    wx.navigateTo({
+      url: '../../packageA/pages/epa-project/epa-project',
+    })
+  },
+
+  epa_team:function(){
+    wx.navigateTo({
+      url: '../../packageA/pages/epa-team/epa-team',
+    })
+  },
+
+  history_honor:function(){
+    wx.navigateTo({
+      url: '../../packageA/pages/epa-introduction/epa-introduction',
     })
   },
 
@@ -99,6 +118,19 @@ Page({
       },
       fail(e) {
         console.log(e)
+      }
+    })
+    const db = wx.cloud.database();  
+    db.collection('index_swiper').get({
+      success: res => {
+        console.log(res.data)  
+        this.setData({
+          index_swiper: res.data,
+          // act_time:res.data.activity_date
+        })
+      },
+      fail:err=>{
+        console.log(err)
       }
     })
   },

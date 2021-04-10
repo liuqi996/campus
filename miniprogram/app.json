@@ -1,32 +1,63 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/resume/resume",
     "pages/act_bm_list/act_bm_list",
     "pages/act_detail/act_detail",
     "pages/act_sign_up/act_sign_up",
     "pages/act_sign_up_result/act_sign_up_result",
     "pages/act_sign_in_intro/act_sign_in_intro",
     "pages/prize/prize",
-    "pages/epa-introduction/epa-introduction",
     "pages/appraise/appraise",
     "pages/appraise_detail/appraise_detail",
-    "pages/epa-project/epa-project",
-    "pages/epa-team/epa-team",
-    "pages/epa-login/epa-login",
-    "pages/epa-cantrol/epa-cantrol",
-    "pages/epa-admin-act-list/epa-admin-act-list",
-    "pages/epa-admin-sign-up-data/epa-admin-sign-up-data",
-    "pages/epa-admin-sign-in-data/epa-admin-sign-in-data",
-    "pages/epa-admin-initiate/epa-admin-initiate",
     "pages/activity_sign_in/activity_sign_in",
     "pages/garbage/garbage",
-    "pages/garbagekind/garbagekind",
-    "pages/garbagesearch/garbagesearch",
-    "pages/garbagedetail/garbagedetail",
     "pages/act_sign_in_result/act_sign_in_result",
-    "pages/epa-register/epa-register",
-    "pages/epa-amend-password/epa-amend-password",
-    "pages/qrcode_sign_in/qrcode_sign_in"
+    "pages/qrcode_sign_in/qrcode_sign_in",
+    "pages/third/third"
+  ],
+  "subPackages": [
+    {
+      "root": "packageA/",
+      "name": "packA",
+      "pages": [
+        "pages/epa-introduction/epa-introduction",
+        "pages/epa-project/epa-project",
+        "pages/epa-team/epa-team"
+      ]
+    },
+    {
+      "root": "packageB/",
+      "name": "packB",
+      "pages": [
+        "pages/epa_recent/epa_recent",
+        "pages/guide/guide",
+        "pages/epa_year/epa_year"
+      ]
+    },
+    {
+      "root": "packageC/",
+      "name": "packC",
+      "pages": [
+        "pages/epa-login/epa-login",
+        "pages/epa-cantrol/epa-cantrol",
+        "pages/epa-admin-act-list/epa-admin-act-list",
+        "pages/epa-admin-sign-up-data/epa-admin-sign-up-data",
+        "pages/epa-admin-sign-in-data/epa-admin-sign-in-data",
+        "pages/epa-admin-initiate/epa-admin-initiate",
+        "pages/epa-register/epa-register",
+        "pages/epa-amend-password/epa-amend-password"
+      ]
+    },
+    {
+      "root": "packageD/",
+      "name": "packD",
+      "pages": [
+        "pages/garbagekind/garbagekind",
+        "pages/garbagesearch/garbagesearch",
+        "pages/garbagedetail/garbagedetail"
+      ]
+    }
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -45,6 +76,12 @@
     {
       "pagePath": "pages/garbage/garbage",
       "text": "垃圾分类",
+      "iconPath": "images/garbage.png",
+      "selectedIconPath": "images/garbage-s.png"
+    },
+    {
+      "pagePath": "pages/resume/resume",
+      "text": "我的",
       "iconPath": "images/garbage.png",
       "selectedIconPath": "images/garbage-s.png"
     }

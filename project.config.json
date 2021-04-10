@@ -19,46 +19,46 @@
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
-    "useMultiFrameRuntime": false,
+    "useMultiFrameRuntime": true,
     "useApiHook": true,
+    "useApiHostProcess": false,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
     },
+    "enableEngineNative": false,
+    "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
-    "packNpmRelationList": []
+    "packNpmRelationList": [],
+    "minifyWXSS": true
   },
   "appid": "wx13e067c5499ca79a",
   "projectname": "%E6%99%BA%E6%85%A7%E7%8E%AF%E5%8D%8F",
-  "libVersion": "2.8.1",
+  "libVersion": "2.10.0",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
     "search": {
-      "current": -1,
       "list": []
     },
     "conversation": {
-      "current": -1,
       "list": []
     },
     "plugin": {
-      "current": -1,
       "list": []
     },
     "game": {
       "list": []
     },
     "gamePlugin": {
-      "current": -1,
       "list": []
     },
     "miniprogram": {
-      "current": 0,
       "list": [
         {
           "id": -1,

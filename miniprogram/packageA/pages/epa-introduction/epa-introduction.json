@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "wux-timeline": "../../../wuxui/timeline/index",
+    "wux-timeline-item": "../../../wuxui/timeline-item/index"
+  },
+  "navigationBarTitleText": "历史荣誉"
+}
