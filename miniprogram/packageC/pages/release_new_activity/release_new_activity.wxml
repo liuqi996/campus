@@ -1,0 +1,89 @@
+<!--packageC//pages/release_new_activity/release_new_activity.wxml-->
+<view class="bd_card">
+ <form class="card" bindsubmit="formSubmit" bindreset="formReset">
+    <view style="margin-top:10px">
+      <view class="biaoti" style="font-weight:700">活动场所类型：</view>
+    </view>
+    <view class="hang">
+      <view style="display:flex">
+        <radio-group bindchange="type_radioChange" style="display:flex">
+          <label wx:for="{{activity_type_list}}" wx:key="{{item.value}}" style="display: flex;justify-content: center;align-items: center;">
+            <view style="display:flex;margin-right:5px">
+              <radio value="{{item.name}}" name='type' />
+            </view>
+            <view style="margin-right:10px">{{item.name}}</view>
+          </label>
+        </radio-group>
+      </view>
+    </view>
+
+    <view class="hang">
+      <view class="biaoti" style="font-weight:700">活动名称/主题：</view>
+      <view class="srk">
+        <input placeholder="请输入活动名称或者主题" class="srk1" type="text" name='activity_name' placeholder-class="placeholderStyle" value="{{activity_name}}"/>
+      </view>
+    </view>
+
+    <view class="hang">
+      <view class="biaoti" style="font-weight:700">活动时间：</view>
+      
+      <picker mode="date" value="{{date}}" start="2021-04-11" end="2022-04-11" bindchange="bindDateChange"><view class="picker">{{activity_date}}</view>
+      </picker><text>　</text>
+      
+      <picker mode="time" value="{{time}}" start="07:30" end="22:00" bindchange="bindTimeChange"><view class="picker">{{activity_start_time}}</view>
+      </picker>
+    </view>
+
+    <view class="hang">
+      <view class="biaoti" style="font-weight:700">活动地点：</view>
+      <view class="srk">
+        <input placeholder="请输入活动地点" class="srk1" type="text" name='activity_place' placeholder-class="placeholderStyle" value="{{activity_place}}"/>
+      </view>
+    </view>
+
+
+    <view style="margin-top:10px">
+      <view class="biaoti" style="font-weight:700">活动对象：</view>
+    </view>
+    <view class="hang">
+      <view style="display:flex">
+        <radio-group bindchange="obiect_radioChange" style="display:flex">
+          <label wx:for="{{activity_object_list}}" wx:key="{{item.value}}" style="display: flex;justify-content: center;align-items: center;">
+            <view style="display:flex;margin-right:5px">
+              <radio value="{{item.name}}" name='activity_object' />
+            </view>
+            <view style="margin-right:10px">{{item.name}}</view>
+          </label>
+        </radio-group>
+      </view>
+    </view>
+
+
+    <view class="hang">
+      <view class="biaoti" style="font-weight:700">主办：</view>
+      <view class="srk">
+        <input placeholder="请输入活动主办方" class="srk1" type="text" name='sponsor' placeholder-class="placeholderStyle" value="{{sponsor}}"/>
+      </view>
+    </view>
+
+    <view class="hang">
+      <view class="biaoti" style="font-weight:700">协办：</view>
+      <view class="srk">
+        <input placeholder="请输入活动协办" class="srk1" type="text" name='co_organizer' placeholder-class="placeholderStyle" value="{{co_organizer}}"/>
+      </view>
+    </view>
+
+
+    <view style="display: flex;margin-top:10px">
+      <view class="biaoti" style="font-weight:700">活动简介：</view>
+      <view style="background-color:#e4e4e4;min-height:50px;margin-left: 5px;width: 70%;background-color: #e4e4e4;font-size: 13px;border-radius: 10px;">
+        <textarea  auto-height placeholder="请将活动简介粘贴在此处……" class="text_area" maxlength="-1" placeholder-class="placeholderStyle" name='activity_detail' value="{{activity_detail}}"></textarea>
+      </view>
+    </view>
+
+    <view class="anniu" style="display:flex;">
+      <button form-type="reset" class="cz_anniu" size="mini"><view class="bu_text">重置</view></button>
+      <button form-type="submit" class="tj_anniu" size="mini"><view class="bu_text">提交</view></button>
+    </view>
+  </form>
+</view>

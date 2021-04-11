@@ -1,5 +1,6 @@
 // pages/act_bm_list/act_bm_list.js
-var util = require('../../utils/time1.js')
+var util = require('../../utils/bm_list_time.js')
+// var util = require('../../utils/time1.js')
 var common = require('../../utils/time.js')
 Page({
 
@@ -80,28 +81,11 @@ Page({
       }
     })
     var xinDate = util.formatTime(new Date()).substr(0,10);
-    // this.setData({
-    //   xinDate: util.formatTime(new Date())
-    // });
     var kktime=xinDate;
+    console.log(kktime)
     this.setData({
       kktime:kktime
     })
-    // this.setData({
-    //   kktime:xinDate
-    // })
-    // console.log(this.data.kktime)
-    // sstime=moment(this.data.kktime).format('YYYY-MM-DD')
-    // console.log(sstime)
-    //var str = '我是生长在中国南方的纯正中国人';
-    // var reg = new RegExp( '/' , "g" )
-    // var newstr = this.data.kktime.replace( reg , '-' );
-    // console.log(newstr)
-    // this.setData({
-    //   sstime:newstr
-    // })
-    //sstime=this.data.kktime.replace(/\//g,"\\-");
-    //console.log(sstime)
     this.setData({
       to: new Date().getTime(),
       ntime:new Date().getTime(),

@@ -43,10 +43,12 @@
         "pages/epa-cantrol/epa-cantrol",
         "pages/epa-admin-act-list/epa-admin-act-list",
         "pages/epa-admin-sign-up-data/epa-admin-sign-up-data",
+        "pages/sign-up-data/sign-up-data",
         "pages/epa-admin-sign-in-data/epa-admin-sign-in-data",
         "pages/epa-admin-initiate/epa-admin-initiate",
         "pages/epa-register/epa-register",
-        "pages/epa-amend-password/epa-amend-password"
+        "pages/epa-amend-password/epa-amend-password",
+        "pages/release_new_activity/release_new_activity"
       ]
     },
     {
@@ -76,12 +78,6 @@
     {
       "pagePath": "pages/garbage/garbage",
       "text": "垃圾分类",
-      "iconPath": "images/garbage.png",
-      "selectedIconPath": "images/garbage-s.png"
-    },
-    {
-      "pagePath": "pages/resume/resume",
-      "text": "我的",
       "iconPath": "images/garbage.png",
       "selectedIconPath": "images/garbage-s.png"
     }

@@ -5,7 +5,7 @@
   <view class="act_id">[活动ID：{{item.act_id}}]</view>
   <view class="act_date">
     <image class="act_icon" src="../../images/detail/date.png"></image>
-    <text space="nbsp">活动时间：{{item.activity_date}} {{item.start_time}}</text>
+    <text space="nbsp">活动时间：{{item.activity_date}} {{item.activity_start_time}}</text>
     <!-- -{{item.end_time}} -->
   </view>
   <view class="act_place">

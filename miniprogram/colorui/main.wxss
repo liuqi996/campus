@@ -69,7 +69,7 @@ swiper,
 button,
 input,
 textarea,
-label,
+/* label, */
 navigator,
 image {
 	box-sizing: border-box;
@@ -132,13 +132,13 @@ image.loading::after {
          开关
  ==================== */
 
-switch,
+/* switch,
 checkbox,
 radio {
 	position: relative;
-}
+} */
 
-switch::after,
+/* switch::after,
 switch::before {
 	font-family: "cuIcon";
 	content: "\e645";
@@ -493,7 +493,7 @@ checkbox.white[checked] .wx-checkbox-input,
 radio.white[checked] .wx-radio-input {
 	background-color: var(--white) !important;
 	color: var(--black) !important;
-}
+} */
 
 /* ==================
           边框

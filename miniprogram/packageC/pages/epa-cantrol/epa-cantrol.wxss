@@ -14,7 +14,40 @@ page{
   border-radius: 30rpx;
   padding-bottom: 10px;
 }
-.dot{
+.intro{
+  font-size: 18px;
+  color:black;
+  /* color:white; */
+  font-weight: 800;
+  /* width: 400rpx;
+  margin-left: 130rpx; */
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+  letter-spacing: 20rpx;
+}
+.tro{
+  margin-top:10px;
+  /* margin-bottom: 10px; */
+  display: flex;
+  /* margin-bottom: 10px; */
+  /* margin-top: 20px; */
+}
+.troitem{
+  width: 25%;
+}
+.troitemimg{
+  width: 140rpx;
+  height: 140rpx;
+  padding-left:12.5rpx
+}
+.menuname{
+  font-size: 12px;
+  width: 165rpx;
+  display: flex;
+  justify-content: center;
+}
+/* .dot{
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
@@ -88,44 +121,18 @@ page{
   justify-content: center;
   letter-spacing: 20rpx;
 }
-.intro{
-  font-size: 18px;
-  color:black;
-  /* color:white; */
-  font-weight: 800;
-  /* width: 400rpx;
-  margin-left: 130rpx; */
-  display: flex;
-  justify-content: center;
-  padding-top: 6px;
-  letter-spacing: 20rpx;
-}
-.tro{
-  margin-top:10px;
-  /* margin-bottom: 10px; */
-  display: flex;
-  /* margin-bottom: 10px; */
-  /* margin-top: 20px; */
-}
+
 .tro-bottom{
   display: flex;
-  /* padding-top: 23px; */
+  /* padding-top: 23px;
 }
 .troitemb1{
   width: 25%;
 }
-.troitem{
-  width: 25%;
-}
-.troitemimg{
-  width: 140rpx;
-  height: 140rpx;
-  padding-left:12.5rpx
-}
 .troitemimga,.troitemimgb,.troitemimgc,.troitemimgd{
   border-radius: 50%;
   width: 118rpx;
-  /* height: 118rpx; */
+  /* height: 118rpx;
   margin-top: 18rpx;
   margin-left: 20rpx;
   display: flex;
@@ -147,14 +154,8 @@ page{
 .troitemimgd{
   background: linear-gradient(to top, #da4453, #89216b);
 }
-.menuname{
-  font-size: 12px;
-  width: 165rpx;
-  display: flex;
-  justify-content: center;
-}
 .recent{
   margin-top: 10px;
   font-family: cursive;
   margin-left:45rpx;
-}
+} */

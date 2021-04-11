@@ -5,6 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
+    th:[
+      "序号","姓名","性别","学院班级","联系方式","报名时间","报名编号"
+    ],
     list: [],
     list_nums:0,
     fu:0,
@@ -71,15 +74,32 @@ Page({
       .then(res => {
         if(res.data==null || res.data==0 || res.data==" "){
           console.log("为空")
+          // this.setData({
+          //   fu:1
+          // })
           this.setData({
+            fu:2
+          })
+        }
+        else{
+        // this.setData({
+        //   list: old_data.concat(res.data),
+        //   list_nums: x
+        // })
+        // if(res.data.length<=20){
+          if(res.data.length<20){
+          this.setData({
+            list: old_data.concat(res.data),
+            list_nums: x,
             fu:1
           })
         }
         else{
-        this.setData({
-          list: old_data.concat(res.data),
-          list_nums: x
-        })
+          this.setData({
+            list: old_data.concat(res.data),
+            list_nums: x
+          })
+        }
           console.log(res.data)}
       })
       .catch(err => {
@@ -103,6 +123,11 @@ Page({
         this.setData({
           list: res.data,
         })
+        // if(list.length<=20){
+        //   this.setData({
+        //     fu:1
+        //   })
+        // }
       },
       fail:err=>{
         console.log(err)

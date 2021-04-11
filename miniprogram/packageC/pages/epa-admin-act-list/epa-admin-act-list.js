@@ -1,6 +1,6 @@
 // pages/epa-admin-act-list/epa-admin-act-list.js
 var util = require('../../../utils/time1.js')
-var common = require('../../../utils/time.js')
+//var common = require('../../../utils/time.js')
 Page({
 
   /**
@@ -55,7 +55,7 @@ Page({
     let activity_name = e.currentTarget.dataset.activity_name;
     let id = e.currentTarget.dataset.act_id;
     wx.navigateTo({
-      url: '../../pages/epa-admin-sign-up-data/epa-admin-sign-up-data?activity_name='+ activity_name +'&id='+ id,
+      url: '../../pages/sign-up-data/sign-up-data?activity_name='+ activity_name +'&id='+ id,
     })
   },
   qdsj:function(e){

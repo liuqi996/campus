@@ -8,6 +8,12 @@ Page({
 
   },
 
+  release:function(){
+    wx.navigateTo({
+      url: '../../pages/release_new_activity/release_new_activity',
+    })
+  },
+
   amend:function(){
     wx.navigateTo({
       url: '../../pages/epa-amend-password/epa-amend-password',

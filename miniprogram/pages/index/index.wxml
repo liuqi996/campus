@@ -111,6 +111,3 @@
 <view class="bottom">
   <image class="epa" src="../../images/epa.png" mode="widthFix"></image>
 </view>
-
-
-<navigator url="../../packageC/pages/epa-cantrol/epa-cantrol">管理员页面</navigator>

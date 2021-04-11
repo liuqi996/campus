@@ -1,0 +1,108 @@
+<!--packageC//pages/sign-up-data/sign-up-data.wxml-->
+<view class="bt">“{{activity_name}}”活动报名记录</view>
+<view class="su-table-box">
+   <view class="su-table">
+	    <!-- 表格标题 -->
+	    <view class="su-tr">
+		    <view class="su-th" wx:for="{{th}}">{{item}}</view>
+	    </view>
+	    <!-- 表格内容 -->
+	    <view class="su-tr" wx:for="{{list}}">
+	        <view class="su-td">{{index+1}}</view>
+            <view class='su-td'>{{item.name}}</view>
+            <view class='su-td'>{{item.sex}}</view>
+            <view class='su-td' style="font-size:12px">{{item.bjclass}}</view>
+            <view class='su-td-last' bindtap="phone" data-phone="{{item.phone}}">{{item.phone}}</view>
+            <view class='su-td' style="font-size:12px">{{item.signuptime}}</view>
+            <view class='su-td' style="font-size:12px">{{item.sign_up_id}}</view>
+            
+	    </view>
+    </view>
+</view>
+
+<view style="display:flex;justify-content: center;margin-bottom:15px">
+  <!-- <view wx:if="{{list.length===0 || list.length<20}}">已加载全部</view> -->
+  <view wx:if="{{list.length===0}}">很抱歉，未查询到该活动的报名数据！</view>
+  <view wx:elif="{{list.length<20}}">已加载全部</view>
+  <view  wx:elif="{{fu===2}}">很抱歉，没有查询到更多报名数据！</view>
+  <view  wx:elif="{{fu===0}}"><view bindtap="more" class="">加载更多报名记录…</view></view>
+  <view wx:else class="">已加载全部</view>
+  <!-- <view wx:else class="">没有查询到更多数据了</view> -->
+  <!-- <view wx:else class="">没有更多报名记录了哦！</view> -->
+</view>
+<!-- <view class='table'>
+    <view class='tr title line'>
+        <view class='td data td_left'>序号</view>
+        <view class='td data td_left'>姓名</view>
+        <view class='td data td_left'>性别</view>
+        <view class='td data td_left'>班级</view>
+        <view class='td data td_left'>报名号</view>
+        <view class='td data td_left'>报名时间</view>
+        <view class='td data td_last td_right'>联系方式</view>
+    </view>
+    <block wx:for="{{list}}" wx:for-item="item" wx:for-index="idx">
+        <view class='tr content line'>
+            <view class='td '>{{idx+1}}</view>
+            <view class='td '>{{item.name}}</view>
+            <view class='td '>{{item.sex}}</view>
+            <view class='td '>{{item.bjclass}}</view>
+            <view class='td '>{{item.sign_up_id}}</view>
+            <view class='td '>{{item.signuptime}}</view>
+            <view class='td  td_last'>{{item.phone}}</view>
+        </view>
+    </block>
+</view> -->
+<!-- <view class="bt">{{activity_name}}</view>
+<scroll-view scroll-x="{{true}}" bindscroll="scroll" style="white-space:nowrap">
+    <view class="" style="display: flex;background: #3366FF;width:100%;">
+        <view class="bg" style="width:32px">序号</view>
+        <view class="bg" style="width:42px">姓名</view>
+        <view class="bg" style="width:32px">性别</view>
+        <view class="bg" style="width:230px">班级</view>
+        <view class="bg" style="width:100px">联系方式</view>
+        <view class="bg" style="width:230px">报名时间</view>
+        <view class="bg" style="width:100px">报名编号</view>
+    </view>
+    <view class="" style="display: flex;width:100%;" wx:for="{{list}}">
+        <view class="bg" style="width:32px">{{index+1}}</view>
+        <view class="bg" style="width:42px">{{item.name}}</view>
+        <view class="bg" style="width:32px">{{item.sex}}</view>
+        <view class="bg" style="width:230px">{{item.bjclass}}</view>
+        <view class="bg" style="width:100px">{{item.phone}}</view>
+        <view class="bg" style="width:230px">{{item.signuptime}}</view>
+        <view class="bg" style="width:100px">{{item.sign_up_id}}</view>
+    </view>
+</scroll-view> -->
+<!-- <view class="table">
+<!-- <scroll-view class="table" scroll-x="true" bindscroll="scroll" style="width: 100%" style="white-space: nowrap">
+ <view class="tr bg-w">
+  <view class="th">序号</view>
+  <view class="th">姓名</view>
+  <view class="th">性别</view>
+  <view class="th">班级</view>
+  <!-- <view class="th">报名号</view>
+  <view class="th">报名时间</view>
+  <view class="th">联系方式</view>
+ </view>
+ <block wx:for="{{list}}"><!--wx:key="{[code]}"
+  <view class="tr" wx:if="{{index % 2 == 0}}">
+   <view class="td">{{index+1}}</view>
+   <view class="td">{{item.name}}</view>
+   <view class="td">{{item.sex}}</view>
+   <view class="td">{{item.bjclass}}</view>
+   <!-- <view class="td">{{item.sign_up_id}}</view>
+   <!-- <view class="td">{{item.signuptime}}</view>
+   <view class="td">{{item.phone}}</view>
+  </view>
+  <view class="tr" wx:else>
+   <view class="td">{{index+1}}</view>
+   <view class="td">{{item.name}}</view>
+   <view class="td">{{item.sex}}</view>
+   <view class="td">{{item.bjclass}}</view>
+   <!-- <view class="td">{{item.sign_up_id}}</view>
+   <!-- <view class="td">{{item.signuptime}}</view>
+   <view class="td">{{item.phone}}</view>
+  </view>
+ </block>
+</view> -->
+<!-- </scroll-view> -->

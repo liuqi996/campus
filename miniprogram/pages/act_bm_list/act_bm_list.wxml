@@ -2,15 +2,15 @@
 <view wx:for="{{list}}" wx:key="list" class="list" bindtap="signup" data-activity_name="{{item.activity_name}}" data-act_id="{{item.act_id}}" data-id="{{item._id}}">
   <view class="listitem">
     <view class="listtext">
-     <view class="type"> <view class="badge">{{item.type}}</view><view class="sjx"></view></view>
+     <!-- <view class="type"> <view class="badge">{{item.type}}</view><view class="sjx"></view></view> -->
     <view class="title"><image class="titimg" src="../../images/actcell.png"></image>{{item.activity_name}}</view>
-    <view class="time">活动时间：<text space="nbsp">{{item.activity_date}} {{item.start_time}}  </text></view>
+    <view class="time">活动时间：<text space="nbsp">{{item.activity_date}} {{item.activity_start_time}}  </text></view>
     <!--[<wux-timeago class="timeago" to="{{item.activity_date}}"/>]-->
     <view>活动地点：{{item.activity_place}}</view><!---{{item.activity_enddate}} {{item.end_time}}-->
     <!-- <view class="stop_time">报名截止时间：{{item.stop_time}} <view class="signup" bindtap="signup" data-activity_name="{{item.activity_name}}" data-act_id="{{item.act_id}}">点我报名</view> </view> -->
     <view>
     <view wx:if="{{item.activity_date >= kktime}}" class="willdate">即将举办或今天举办</view>
-    <view wx:else class="dateflage"><view class="outdate">已过期</view><wux-timeago class="timeago" to="{{item.activity_date}}"/></view>
+    <view wx:else class="dateflage"><view class="outdate">活动已过期</view><wux-timeago class="timeago" to="{{item.activity_date}}"/></view>
   </view>
   </view>
   </view>

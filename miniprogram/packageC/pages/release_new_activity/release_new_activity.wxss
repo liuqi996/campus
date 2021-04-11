@@ -1,0 +1,154 @@
+/* packageC//pages/release_new_activity/release_new_activity.wxss */
+@import "../../../colorui/main.wxss";
+page{
+  background-color: #fff;
+}
+.top_bg{
+  width: 100%;
+  height: 98px;
+  background:#3CB371;
+}
+.welcome{
+  width: 92%;
+  margin:6px 4% 10px 4%;
+  text-align: justify;
+  text-align-last: left;
+  color:#fff;
+  font-size: 14px;
+}
+
+.top{
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'top';
+  margin-left: 20rpx;
+}
+.grade{
+  font-size: 12px;
+}
+.swiper{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  min-height: 70vh;
+  background-color: #fff;
+}
+.hang{
+  display: flex;
+  align-items: center;
+  margin-top:10px;
+}
+.bd_card{
+  width: 90%;
+  margin:0 5% 10px 5%;
+  font-size: 13px;
+  /* border-top:0.3px dashed #DFFFDF; */
+}
+.tips{
+  width: 90%;
+  margin: 0 5% 10px 5%;
+  padding-top:15px;
+  font-size: 13px;
+}
+.srk{
+  margin-left: 5px;
+  width: 60%;
+  background-color: #e4e4e4;
+  font-size: 13px;
+  height: 30px;
+  border-radius: 30px;
+}
+.srk1{
+  margin-left:12px;
+  font-size: 13px;
+  height: 30px;
+}
+.placeholderStyle{
+  font-size: 13px;
+}
+.text_area{
+  width: 100%;
+  margin-top: 8px;
+  font-size: 13px;
+  min-height: 60px;
+  margin-left: 7px;
+}
+.picker{
+  color:#2D7FFF;
+}
+.anniu{
+  margin-top:15px
+}
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 60%;
+}
+.mini-btn{
+  margin-right: 10rpx;
+}
+.anniu{
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.bu_text{
+  padding:3px 10px 3px 10px;
+  font-size:13px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 3px;
+}
+.tj_anniu{
+  width:auto!important;
+  margin-left:5px!important;
+  margin-right:5px!important;
+  font-weight:normal;
+  background-color: #DFFFDF;
+  color:#00DB00;
+  font-size:13px;
+  font: size 13;
+}
+.tj_anniu::after {
+  border: 0;
+}
+.cz_anniu{
+  width:auto!important;
+  margin-left:5px!important;
+  margin-right:5px!important;
+  font-weight:normal;
+  background-color: #FFEEDD;
+  color:#FF8000
+}
+button{
+  background: initial;
+}
+button:focus{
+  outline: 0;
+}
+
+button::after{
+  border: none;
+}
+button{
+  background-color: transparent;
+  padding-left: 0; 
+  padding-right: 0; 
+  line-height:inherit;
+}
+button{
+  border-radius:0;
+}
+.bd_card{
+  margin-top:20px;
+  width: 90%;
+  margin-left:5%;
+  border-radius: 10rpx;
+}

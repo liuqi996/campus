@@ -1,5 +1,6 @@
 // pages/act_detail/act_detail.js
-var util = require('../../utils/time1.js')
+// var util = require('../../utils/time1.js')
+var util = require('../../utils/bm_list_time.js')
 var common = require('../../utils/time.js')
 Page({
 
